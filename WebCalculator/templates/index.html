@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Stock Calculator by Sheng Zhou</title>
+</head>
+<body>
+<p>&nbsp;</p>
+<h1>Web Stock Calculator by Sheng Zhou</h1>
+<form action="/" method="POST">
+<table>
+<tbody>
+<tr>
+<td>&nbsp;Ticket Symbol:<input name="symbol" type="text" /></td>
+  <td rowspan="7">
+    <h2>Compute Your Profit: </h2><br>
+    Ticket Symbol:<br>
+    {{displaySymbol}}<br>
+    Allotment: <br>
+    {{allot}}<br>
+    Final Share Price: <br>
+    {{fshare}}<br>
+    Sell Commission: <br>
+    {{scomm}}<br>
+    Initial Share Price:<br>
+    {{ishare}}<br>
+    Buy Commission: <br>
+    {{bcomm}}<br>
+    Capital Gain Rate(%):<br>
+    {{crate}}<br>
+    <h2>PROFIT REPORT: </h2><br>
+    Proceeds<br>
+    {{proceeds}}<br>
+    Cost<br>
+    {{cost}}<br>
+    Cost Details: <br>
+    Total purchase Price: &nbsp;<br>
+    {{total_purchase}} <br>
+    Buy Commission = &nbsp; {{bcomm}}<br>
+    Sell Commission = &nbsp;{{scomm}}<br>
+    Tax on Capital Gain = &nbsp;{{gain}}<br>
+    Net profit<br>
+    {{net_profit}}<br>
+    Return on Investment<br>
+    {{return_invest}}<br>
+    To break even, you should have a final share price of <br>
+    {{break_even}}<br>
+  </td>
+</tr>
+<tr>
+<td>&nbsp;Allotment: <input name="allotment" type="number" /></td>
+</tr>
+<tr>
+<td>&nbsp;Final Share Price (in dollars): <input name="final_share" type="number" /></td>
+</tr>
+<tr>
+<td>&nbsp;Sell Commission (in dollars): <input name="sell_commission" type="number" /></td>
+</tr>
+<tr>
+<td>&nbsp;Initial Share Price (in dollars): <input name="initial_share" type="number" /></td>
+</tr>
+<tr>
+<td>&nbsp;Buy Commission (in dollars): <input name="buy_commission" type="number" /></td>
+</tr>
+<tr>
+<td>&nbsp;Capital Gain Tax Rate (in %): <input name="tax_rate" type="number" /></td>
+</tr>
+</tbody>
+</table>
+<input type="submit" value="Calculate" /> <input type="reset" /></form>
+<p>&nbsp;</p>
+</body>
+</html>
